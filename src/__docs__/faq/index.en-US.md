@@ -11,4 +11,4 @@ Answer: Please ensure that when using v-for to render a list, the bound key valu
 
 ### Why is the update order not what I expected when using the v-draggable directive?
 
-Answer: If the data is asynchronous, it is recommended to use a combined function or component. The v-draggable directive cannot detect data updates, resulting in sorting failure!
+Answer: If the data is asynchronous, it is recommended to use a combined function or component. Because the vue directive cannot directly update the passed proxy data in reverse, the sorting fails.
